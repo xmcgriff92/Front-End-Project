@@ -1,0 +1,71 @@
+.navbar-brand {
+    font-family: fantasy;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+body {
+    margin: 0;
+}
+
+
+.banner {
+    background-image:url(https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+    height: 700px;
+    background-size: cover;
+
+}
+
+.overlay {
+    position: absolute;
+    height: 700px;
+    width: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-transition {
+    animation: transitionIn 1.5s;
+}
+
+.para-transition {
+    animation: transitionIn 8s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+h1 {
+    font-size: 70px;
+    font-family: fantasy;
+    color: white;
+    text-align: center;
+    text-shadow: 8px 8px 8px black;
+}
+
+p {
+    font-size: 45px;
+    font-family:fantasy;
+    text-shadow: 8px 8px 8px black;
+    
+}
+
+footer {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
